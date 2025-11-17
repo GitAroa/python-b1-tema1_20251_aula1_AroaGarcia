@@ -42,8 +42,16 @@ Exemple:
 '''
 
 def sum_odd_numbers(list_numbers):
-    # Write here your code
-    pass
+    sum_odd = 0
+    for value in list_numbers:
+        if type(value) != int: 
+            raise ValueError ("El valor ha de ser un número enter")
+        elif value < 0:
+            raise ValueError ("El valor ha de ser major o igual que 0")
+        else:
+            if value%2 != 0:
+            sum_odd += value
+return sum_odd
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
