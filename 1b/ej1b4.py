@@ -54,7 +54,7 @@ Paràmetre:
 
 Exemple:
      Entrada:
-     [1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42]
+         [1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42]
     
      Sortida:
      Average: 19.74
@@ -65,9 +65,12 @@ Exemple:
 import numpy as np
 
 def results(list_numbers):
-    # Write here your code
-    pass
-
+    mean= np.mean(list_numbers)
+    std = np.std(list_numbers)
+    print(f"Average: {round(mean,2)}")
+    print(f"Standard deviation: {round(std,2)}")
+    return mean, std
+    
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 # results([1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42])
