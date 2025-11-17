@@ -39,6 +39,7 @@ Exemple:
 
 '''
 
+
 def fibonacci(fibonacci_number):
    try:
        if fibonacci_number == 0:
